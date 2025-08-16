@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+
+@font-face {
+  font-family: 'Fraunces';
+  src: url('./assets/fonts/Fraunces-Variables.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'McLaren';
+  src: url('./assets/fonts/McLaren-Regular.ttf') format('truetype');
+}
+
+@theme{
+  --color-primary: #E7EFC7;
+  --color-secondary: #AEC8A4;
+  --color-tertiary: #8A784E;
+  --color-last: #3B3B1A;
+  --color-whites: #FEF9EA;
+  --color-buttonmain: #3B3B1A;
+  --color-buttonhover: #FEF9EA;
+  --color-buttonactive: #FEF9EA;
+  --font-fraunces: 'Fraunces', serif;
+  --font-mclaren: 'McLaren', serif;
+}
+
