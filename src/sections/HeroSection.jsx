@@ -24,7 +24,7 @@ function HeroSection() {
         </div>
         <div className='flex flex-row justify-around items-center mt-4 mb-7 gap-15'>
             <button onClick={navigateToWebCam}
-             className='bg-buttonmain hover:bg-buttonhover hover:text-last hover:scale-105 duration-300 text-whites rounded-4xl px-9  py-2 font-fraunces text-xl font-light'>WebCame</button>
+             className='bg-buttonmain hover:bg-buttonhover hover:text-last hover:scale-105 duration-300 text-whites rounded-4xl px-9  py-2 font-fraunces text-xl font-light'>Get Started</button>{/*Let's snap */}
 {/*              
             <button className='bg-buttonmain hover:bg-buttonhover hover:text-last hover:scale-105 duration-300 text-whites rounded-4xl px-9  py-2 font-fraunces text-xl font-light z-10'>Invite a Friend</button>
             <button className='bg-buttonmain hover:bg-buttonhover hover:text-last hover:scale-105 duration-300 text-whites rounded-4xl px-9  py-2 font-fraunces text-xl font-light'>Upload Photo</button> */}

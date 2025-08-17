@@ -98,8 +98,8 @@ useEffect(() => {
   return (
     <div className="min-h-screen w-full max-h-screen overflow-hidden bg-secondary">
       <div className="h-screen ">
-        <div className="flex h-3/4 w-full justify-around items-center px-20 -mt-4">
-          <div className="p-2 h-8/10 w-1/6 border-2 border-dotted flex justify-center items-center ">
+        <div className="flex h-4/5 w-full justify-around items-center px-20 -mt-4">
+          <div className="preview p-2 h-8/10 w-1/6 border-2 border-dotted flex justify-center items-center ">
             {shots.length > 0 ? (
               <div className="flex flex-col space-y-4 overflow-y-auto max-h-full w-full">
               {shots.map((shot, index) => (
@@ -131,7 +131,7 @@ useEffect(() => {
             <button
               onClick={handleSnapClick}
               disabled={countdown !== null || shotsTaken >= shotsNeeded}
-              className="snap-button disabled:cursor-not-allowed z-20 flex justify-center items-center h-22 w-19 bg-white rounded-full font-mclaren font-bold text-xl absolute top-53 right-6 shadow-xl mask-radial-from-neutral-900 hover:scale-130 duration-400 hover:bg-pink-100 cursor-pointer disabled:opacity-50"
+              className="snap-button disabled:cursor-not-allowed z-20 flex justify-center items-center h-23 w-21 bg-white rounded-full font-mclaren font-bold text-xl absolute top-57 right-5 shadow-xl mask-radial-from-neutral-900 hover:scale-130 duration-400 hover:bg-pink-100 cursor-pointer disabled:opacity-50"
             >
               {countdown !== null ? countdown : "snap"}
             </button>
