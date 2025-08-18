@@ -1,5 +1,4 @@
 import React, { useState, useRef, useCallback, useEffect } from "react";
-import Header from "./Header";
 import camerFrame from "../assets/images/camerFrame.svg";
 import Webcam from "react-webcam";
 import countdownSound from '../assets/sounds/countdown.mp3'
@@ -111,7 +110,7 @@ useEffect(() => {
                   )}
           </div>
           <div className="h-8/10 mr-4 ml-17 relative flex justify-center items-center">
-          <div className="text-2xl font-mclaren text-whites absolute -top-4">
+          <div className="text-2xl flex justify-center items-center flex-col font-mclaren text-whites absolute -top-4">
                   {(shotsTaken==shotsNeeded) && <div>Don't OverThink. You look great !</div>}
                   <div>{shotsTaken}/{shotsNeeded}</div>
           </div>

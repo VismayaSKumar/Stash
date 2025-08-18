@@ -35,7 +35,7 @@ function MainLayout() {
         onSignIn={handleSignIn}
         onLogout={handleLogout}
       />
-      {/* Place your routed pages here */}
+      
       <main>
         <Outlet />
       </main>

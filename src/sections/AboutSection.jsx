@@ -11,7 +11,7 @@ function AboutSection() {
                 <AboutCard 
                   heading="Snap Solo or With a Friend"
                   intro="It's better when shared."
-                  content="Invite your bestie and capture memories together — even if you're miles apart. Real-time collab, real-time chaos."/>
+                  content="Invite your bestie and capture memories together — even if you're miles apart. Sync, snap and frame."/>
                 <AboutCard
                   heading="So Many Frames. So Many Stickers."
                   intro="Give your clicks some drip."

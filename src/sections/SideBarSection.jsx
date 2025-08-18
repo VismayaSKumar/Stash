@@ -5,9 +5,11 @@ function SidebarSection({ isOpen, onClose, isAuthenticated, savedImages, onSignI
   const navigate = useNavigate();
   const goToSignUp=()=>{
     navigate("/signup");
+    onClose();
   }
   const goToLogin=()=>{
-    navigate("/login")
+    navigate("/login");
+    onClose();
   }
   return (
     
@@ -43,7 +45,7 @@ function SidebarSection({ isOpen, onClose, isAuthenticated, savedImages, onSignI
           <>
             <h2 className="text-xl text-last font-fraunces font-bold m-4">Welcome!</h2>
             <button className="mt-3 mx-2 px-5 py-2 rounded-full bg-secondary text-black hover:bg-white duration-300"
-              onClick={goToLogin} >LogIn
+              onClick={goToLogin} >Log In
             </button>
             <button className="mt-1 mx-2 px-5 py-2 rounded-full bg-secondary text-black hover:bg-white duration-300"
               onClick={goToSignUp} >Sign Up

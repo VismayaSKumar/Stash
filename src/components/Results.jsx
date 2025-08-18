@@ -73,7 +73,7 @@ const framesDataLayout = {
 
 function Results() {
   const location = useLocation();
-  const { capturedImages } = location.state;
+  const { capturedImages,roomId } = location.state;
   const currentLayout=capturedImages.length;
   const previewLayoutClass = layoutStyles[currentLayout] || "pt-7 pb-15";
   const framesForCurrentLayout = framesDataLayout[currentLayout] || [];
@@ -90,8 +90,9 @@ function Results() {
     link.click();
   }
   let navigate = useNavigate();
-  const navigateToWebCam = ()=>{
-    navigate("/webcam");
+  const navigateToSnapAgain = ()=>{
+    if(roomId) navigate(`/room/${roomId}`)
+    else navigate("/webcam");
   }
 
   return (
@@ -127,7 +128,7 @@ function Results() {
                 <div className=" flex justify-between">
                     <button onClick={handleDownload} className='bg-buttonmain hover:bg-buttonhover hover:text-last hover:scale-105 duration-300 text-whites rounded-4xl px-9  py-2 font-fraunces text-xl font-light z-10'>Download</button>
                     <button className='bg-buttonmain hover:bg-buttonhover hover:text-last hover:scale-105 duration-300 text-whites rounded-4xl px-9  py-2 font-fraunces text-xl font-light z-10'>Stash it</button>
-                    <button onClick={navigateToWebCam} className='bg-buttonmain hover:bg-buttonhover hover:text-last hover:scale-105 duration-300 text-whites rounded-4xl px-9  py-2 font-fraunces text-xl font-light z-10'>Snap Again</button>
+                    <button onClick={navigateToSnapAgain} className='bg-buttonmain hover:bg-buttonhover hover:text-last hover:scale-105 duration-300 text-whites rounded-4xl px-9  py-2 font-fraunces text-xl font-light z-10'>Snap Again!</button>
                 </div> 
             </div>
         </div>
