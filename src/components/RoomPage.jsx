@@ -48,7 +48,8 @@ function RoomPage() {
   }, [roomId, userId]);
 
   // Copy link logic
-  const shareLink = `${window.location.origin}/#/room/${roomId}`;
+  
+  const shareLink = `${window.location.origin}/Stash/#/room/${roomId}`;
   const copyToClipboard = () => {
     navigator.clipboard.writeText(shareLink).then(() => setCopied(true));
     setTimeout(() => setCopied(false), 2000);
