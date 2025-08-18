@@ -91,7 +91,7 @@ function RoomPage() {
       )}
 
       {/* When both users present, show webcam/snapping UI */}
-      {users.length === 2 && (
+      {users.length >= 2 && (
         <div className='flex flex-col w-full font-fraunces'>
           <div className='flex justify-around items-start'>
             <div className='preview p-2 h-full w-1/5 border-2 border-dotted flex justify-center items-center'>
