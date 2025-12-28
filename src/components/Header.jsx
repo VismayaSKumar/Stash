@@ -28,10 +28,10 @@ function Header({ onMenuClick }) {
   };
 
   return (
-    <div className={`w-full h-20 flex justify-between items-center px-10 pt-4 ${bgClr}`}>
+    <div className={`w-full h-20 flex justify-between items-center px-4 lg:px-10 pt-4 ${bgClr}`}>
       <div>
         {logoSrc && (
-          <img src={logoSrc} alt="logo" className="h-24 hover:scale-105 duration-600" />
+          <img src={logoSrc} alt="logo" className="h-20 lg:h-24 hover:scale-105 duration-600" />
         )}
       </div>
       <div className="flex gap-3">
@@ -40,14 +40,14 @@ function Header({ onMenuClick }) {
             src={home2}
             alt="home icon"
             onClick={navigateToHome}
-            className="h-15 hover:opacity-70 duration-400 cursor-pointer"
+            className="h-13 lg:h-15 hover:opacity-70 duration-400 cursor-pointer"
           />
         ) : isLandingPage ? (
           <img
             src={menu}
             alt="menu icon"
             onClick={onMenuClick}
-            className="h-15 hover:opacity-70 duration-400 cursor-pointer"
+            className="h-13 lg:h-15 hover:opacity-70 duration-400 cursor-pointer"
           />
         ) : (
           <>
@@ -55,13 +55,13 @@ function Header({ onMenuClick }) {
               src={home}
               alt="home icon"
               onClick={navigateToHome}
-              className="h-15 hover:opacity-70 duration-400 cursor-pointer"
+              className="h-13 lg:h-15 hover:opacity-70 duration-400 cursor-pointer"
             />
             <img
               src={menu}
               alt="menu icon"
               onClick={onMenuClick}
-              className="h-15 hover:opacity-70 duration-400 cursor-pointer"
+              className="h-13 lg:h-15 hover:opacity-70 duration-400 cursor-pointer"
             />
           </>
         )}

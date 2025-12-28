@@ -96,13 +96,13 @@ function Results() {
   }
 
   return (
-    <div className="w-full min-h-screen bg-secondary flex flex-col">
-        <div className="flex flex-row gap-23  justify-between h-full px-56 py-5">
-            <div ref={previewRef} className="border-1  flex flex-col items-center justify-center  relative">
-                <div className={`border-2 border-dotted flex flex-col items-center justify-center relative  ${previewLayoutClass}`}>                    
+    <div className="w-full min-h-screen overflow-hidden bg-secondary flex flex-col">
+        <div className="flex flex-col-reverse lg:flex-row lg:gap-23 gap-9  lg:justify-between  h-full px-8 w-full lg:px-56 py-5">
+            <div ref={previewRef} className="border-1 flex flex-col items-center justify-center  relative">
+                <div className={`border-2 border-dotted flex flex-col items-center justify-center relative ${previewLayoutClass}`}>                    
                     {capturedImages.map((imgObj, idx) => (
                     <img key={idx} src={imgObj.src} alt={`Captured ${idx + 1}`}
-                        className="object-contain h-[390px] w-[420px]  px-3 py-0"
+                        className="object-contain bg-black h-full w-full lg:h-[390px] lg:w-[420px] lg:px-3 py-0"
                         style={{filter:imgObj.filter || "none"}}
                         />
                     ))}
@@ -110,10 +110,10 @@ function Results() {
                 {selectedFrame && (<img className="absolute righ-0 h-full w-full pointer-events-none object-cover z-30  " src={selectedFrame} alt="" />)}  
             </div>
 
-            <div className="flex-1 flex flex-col gap-15 ">
-                <div className="bg-primary rounded-2xl px-5 py-10">
-                    <h1 className="text-2xl font-fraunces font-bold text-tertiary ">Frames</h1>
-                    <div className="grid grid-cols-6 gap-2 m-4">
+            <div className="flex-1 flex flex-col gap-10 lg:gap-15 ">
+                <div className="bg-primary rounded-2xl px-4 lg:px-5 py-4 lg:py-10">
+                    <h1 className="text-xl lg:text-2xl font-fraunces font-bold text-tertiary ">Frames</h1>
+                    <div className="grid grid-cols-6 gap-2 m-1 lg:m-4">
                        {framesForCurrentLayout.map((item, idx) => (
                         <img key={idx} src={item.sample} alt={`Frame ${idx + 1}`}
                             onClick={()=>{setSelectedFrame(item.frame)}}
@@ -122,13 +122,13 @@ function Results() {
                        ))}
                     </div>
                 </div>
-                <div className="bg-primar bg-primary  rounded-2xl -my-5 p-10 flex justify-center items-center">
+                <div className="bg-primar bg-primary  rounded-2xl -my-5 p-4 lg:p-10 flex justify-center items-center">
                     <PickupLinesCard/>
                 </div>
-                <div className=" flex justify-between">
-                    <button onClick={handleDownload} className='bg-buttonmain hover:bg-buttonhover hover:text-last hover:scale-105 duration-300 text-whites rounded-4xl px-9  py-2 font-fraunces text-xl font-light z-10'>Download</button>
-                    <button className='bg-buttonmain hover:bg-buttonhover hover:text-last hover:scale-105 duration-300 text-whites rounded-4xl px-9  py-2 font-fraunces text-xl font-light z-10'>Stash it</button>
-                    <button onClick={navigateToSnapAgain} className='bg-buttonmain hover:bg-buttonhover hover:text-last hover:scale-105 duration-300 text-whites rounded-4xl px-9  py-2 font-fraunces text-xl font-light z-10'>Snap Again!</button>
+                <div className=" flex justify-between text-lg lg:text-xl text-whites font-fraunces  font-light z-10 ">
+                    <button onClick={handleDownload} className='bg-buttonmain hover:bg-buttonhover hover:text-last hover:scale-105 duration-300  rounded-4xl lg:px-9 px-4 py-2 lg:py-2 '>Download</button>
+                    <button className='bg-buttonmain hover:bg-buttonhover hover:text-last hover:scale-105 duration-300  rounded-4xl lg:px-9 px-4 py-2 lg:py-2 '>Stash it</button>
+                    <button onClick={navigateToSnapAgain} className='bg-buttonmain hover:bg-buttonhover hover:text-last hover:scale-105 duration-300  rounded-4xl lg:px-9 px-4 py-2 lg:py-2 '>Snap Again!</button>
                 </div> 
             </div>
         </div>

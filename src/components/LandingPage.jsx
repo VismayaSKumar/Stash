@@ -8,7 +8,7 @@ import Header from './Header'
 
 function LandingPage() {
   return (
-    <div className='min-h-screen bg-primary'>
+    <div className='min-h-screen w-full overflow-hidden bg-primary'>
       <HeroSection />
       <AboutSection/>  
       <HowSection/>

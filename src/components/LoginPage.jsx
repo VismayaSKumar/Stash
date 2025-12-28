@@ -7,13 +7,13 @@ function LoginPage() {
     navigate("/signup");
   }
   return (
-    <div className='h-screen w-full bg-primary font-fraunces flex justify-center items-center'>
-        <div className='h-4/7 w-3/5 bg-secondary rounded-4xl p-4 flex justify-center items-center '>
+    <div className='h-screen w-full bg-primary font-fraunces flex justify-center items-center px-7'>
+        <div className='lg:h-4/7 lg:w-3/5 w-full h-1/2 bg-secondary rounded-4xl p-4 flex justify-center items-center '>
           <div className=' h-full w-full flex gap-4 justify-between '>
-            <div className='w-1/3 p-4 bg-whites rounded-l-3xl'>
+            <div className='w-1/3 p-4 bg-whites hidden lg:block rounded-l-3xl'>
             
             </div>
-            <div className='w-2/3 p-4 pb-7 bg-whites  font-fraunces text-last rounded-r-3xl flex justify-between flex-col items-center'>
+            <div className='lg:w-2/3 w-full p-4 pb-7 bg-whites  font-fraunces text-last rounded-3xl lg:rounded-r-3xl flex justify-between flex-col items-center'>
               <h1 className=' text-3xl'>Login</h1>
               <form action="login" className='flex flex-col gap-4 w-full'>
                 <div>

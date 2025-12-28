@@ -2,11 +2,11 @@ import React from 'react'
 import AboutCard from '../cards/AboutCard'
 function AboutSection() {
   return (
-    <div id='about' className='min-h-screen w-full flex flex-col py-20 px-30'>
+    <div id='about' className='lg:min-h-screen w-full flex flex-col py-14  px-10 lg:py-20 lg:px-30'>
         <div className='flex justify-start'>
-            <h1 className='text-8xl font-fraunces text-tertiary'>Why Stash?</h1>
+            <h1 className=' text-4xl lg:text-8xl font-fraunces text-tertiary'>Why Stash?</h1>
         </div>
-        <div className='flex flex-wrap gap-10 mt-10 justify-center items-center '>
+        <div className='flex flex-wrap gap-10 mt-9 lg:mt-10 justify-center items-center '>
             
                 <AboutCard 
                   heading="Snap Solo or With a Friend"

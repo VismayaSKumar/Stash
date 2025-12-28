@@ -33,15 +33,15 @@ function ContactSection() {
     e.target.reset();
   }
   return (
-    <div className='w-full max-h-screen font-fraunces bg-primary flex justify-center items-center p-20 px-30'>
-        <div className='w-2/3 h-1/2 bg-secondary p-4 rounded-3xl shadow-lg'>
-            <div className='p-4 bg-whites rounded-3xl flex flex-col gap-4 justify-center items-center '>
-                <h1 className='text-5xl font-light'>Get In touch</h1>
-                <form onSubmit={sendEmail} className='flex flex-col w-full px-6'>
+    <div className='w-full max-h-screen font-fraunces bg-primary flex justify-center items-center px-6 py-10  lg:py-20  lg:px-30'>
+        <div className='w-full lg:w-2/3 h-1/2 bg-secondary p-4 rounded-3xl shadow-lg'>
+            <div className='p-4 bg-whites rounded-3xl flex flex-col gap-1 lg:gap-4 justify-center items-center '>
+                <h1 className='text-3xl lg:text-5xl font-light'>Get In touch</h1>
+                <form onSubmit={sendEmail} className='flex flex-col w-full lg:px-6'>
                     <label htmlFor="email" className='font-bold text-sm p-2 text-tertiary'>Email</label>
-                    <input type="email" placeholder='Enter your Email' name="from_email" id="from_email" className='bg-primary rounded-full w-full p-3' required />
+                    <input type="email" placeholder='Enter your Email' name="from_email" id="from_email" className='bg-primary rounded-3xl lg:rounded-full w-full p-3' required />
                     <label htmlFor="message"className='font-bold text-sm p-2 text-tertiary'>Message</label>
-                    <textarea name="message" id="message" cols="30" rows="3" placeholder='Type your message...' className='bg-primary  rounded-3xl w-full p-3' required></textarea>
+                    <textarea name="message" id="message" cols="30" rows="3" placeholder='Type your message...' className='bg-primary rounded-3xl lg:rounded-3xl w-full p-3' required></textarea>
                     <div className='flex justify-end items-center mt-4'>
                         <button type="submit" className='bg-buttonmain hover:bg-buttonhover border-1 border-zinc-600 hover:border-1 hover:text-last transition-colors duration-300 text-whites rounded-4xl px-9  py-2 font-fraunces text-xl text-center font-light '>{buttonText}</button>
                     </div>
