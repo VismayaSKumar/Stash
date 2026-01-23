@@ -92,7 +92,7 @@
 ![Login Page](image-1.png)
 ![MainLayout](image-4.png)
 ![Frames](image-2.png)
-![responsive mobile page](image-5.jpeg)
+![responsive mobile page](image-5.png)
 ![responsive mobile page](image-7.jpeg)
 ![responsive mobile image](image-6.jpeg)
 ![Figma Design](image-3.png)
